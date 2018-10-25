@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<!-- <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Haha 😂 Even your dog&#39;s dancin&#39; to celebrate! 🐕 RT @MonkenaE: are you proud of me i&#39;m tired of so much dancing <a href="https://t.co/cM0YXIQidb">https://t.co/cM0YXIQidb</a></p>&mdash; HIDEKI NAGANUMA｜長沼 英樹 (@Hideki_Naganuma) <a href="https://twitter.com/Hideki_Naganuma/status/854537427733463040?ref_src=twsrc%5Etfw">April 19, 2017</a></blockquote>
+ -->
+   
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+	var interval = setInterval(function() {
+		var frame = window.frames["twitter-widget-0"];
+		if (frame == null)
+			return;
+		var images = frame.document.getElementsByClassName("Avatar");
+		if (images.length === 0)
+			return;
+		clearInterval(interval);
+		for (var i = 0; i < images.length; ++i) {
+			images[i].src = images[i].src.replace("_normal", "");
+		}
+	}, 100);
+</script>
+</body>
+</html>
